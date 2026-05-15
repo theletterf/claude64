@@ -2,6 +2,8 @@
 
 A Claude chat client for the Commodore 64.
 
+<img width="715" height="539" alt="Screenshot 2026-05-15 at 23 09 21" src="https://github.com/user-attachments/assets/8e1a2f94-bc21-4eac-829c-e582afaeb0fa" />
+
 Type a message on the C64, get a streaming response from Claude — over a real
 (emulated) RS-232 serial connection.
 
