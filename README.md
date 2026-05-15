@@ -39,22 +39,13 @@ Produces `c64/build/claude64.prg` and copies the Swiftlink driver to
 
 ## Run
 
-Start the proxy in one terminal:
-
 ```sh
 export ANTHROPIC_API_KEY=sk-ant-...
-python3 proxy/claude_proxy.py
+./scripts/run.sh
 ```
 
-Launch the emulator in another:
-
-```sh
-make run
-```
-
-VICE starts with the Swiftlink cartridge configured on the User Port, pointed
-at `127.0.0.1:25232`. The C64 loads the driver from device 8 (served from
-`c64/build/`), connects, and shows the chat prompt.
+This starts the proxy and launches VICE in one step. The C64 loads the
+Swiftlink driver from device 8, connects, and shows the chat prompt.
 
 
 ## Usage
@@ -75,11 +66,11 @@ Built-in debug commands:
 ## Echo mode (no API key needed)
 
 ```sh
-python3 proxy/claude_proxy.py --echo
+./scripts/run.sh --echo
 ```
 
-The proxy echoes your input back without calling Anthropic. Useful for testing
-the serial link and UI without spending tokens.
+Echoes input back without calling Anthropic. Useful for testing the serial
+link and UI without spending tokens.
 
 
 ## License
