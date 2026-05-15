@@ -4,3 +4,6 @@ __pycache__/
 *.o
 *.map
 .DS_Store
+.claude/settings.local.json
+127.0.0.1:*
+.bridge/
