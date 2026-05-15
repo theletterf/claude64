@@ -1,0 +1,6 @@
+c64/build/
+__pycache__/
+*.pyc
+*.o
+*.map
+.DS_Store

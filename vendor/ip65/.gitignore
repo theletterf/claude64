@@ -1,0 +1,15 @@
+*.o
+*.lib
+*.map
+*.prg
+*.bin
+*.sys
+*.com
+*.vicprg
+*.d64
+*.dsk
+*.atr
+*.zip
+*.obj
+*.exe
+/ip65.h
